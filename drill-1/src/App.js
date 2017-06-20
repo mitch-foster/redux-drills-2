@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>DevMountain Hackathon</h1>
+        <h1><a style={{color: '#61dafb'}}>DevMountain</a> Hackathon</h1>
         <h3>Guest List:</h3>
         <ul>
           {/*guest list from store*/}
