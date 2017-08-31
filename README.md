@@ -234,7 +234,7 @@ export function removeGuest(i) {
 export default function reducer(state = initialState, action) {
   switch (action.type) {
     case ADD_GUEST:
-      return Object.assign({}, state, {guests: [...state, action.payload]});
+      return Object.assign({}, state, {guests: [...state.guests, action.payload]});
     case REMOVE_GUEST:
       return Object.assign({}, state, {guests: state.guests.filter((guest, i) => i !== action.payload)});
     default:
